@@ -3,106 +3,366 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishna | Portfolio</title>
+    <title>Krishna C. Mummadi | Geospatial Data Scientist</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for standard icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="nav-content">
-            <a href="#hero" class="logo">K.</a>
+            <a href="#hero" class="logo">Krishna</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Main Content -->
     <main>
+        <!-- Topo Background Grid -->
+        <div class="topo-bg"></div>
+
         <!-- Hero Section -->
         <section id="hero" class="hero section hidden">
-            <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="gradient-text">Krishna</span></h1>
-                <p class="hero-subtitle">M.S. GIS Student | Remote Sensing & Earth Observation</p>
-            </div>
-            <!-- Interactive background element -->
-            <div class="glow-orb orb-1"></div>
-            <div class="glow-orb orb-2"></div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section hidden">
-            <h2 class="section-title">About Me</h2>
-            <div class="cards-container">
-                <div class="glass-card">
-                    <p style="font-size: 1.1rem; line-height: 1.8;">
-                        I am a graduate student in Geographic Information Systems (GIS) at the University of Maryland Baltimore County, with a research focus on Earth observation, remote sensing, and geospatial analysis. My work centers on using satellite imagery, spatial data, and reproducible workflows to study environmental and socio-environmental processes. I am particularly interested in applying computational methods to analyze large geospatial datasets and support research in environmental monitoring.
-                    </p>
+            <div class="hero-container">
+                <h1 class="hero-title">Krishna C. Mummadi</h1>
+                <h2 class="hero-subtitle">Geospatial Analysis • Remote Sensing • Earth Observation • GeoIntelligence</h2>
+                
+                <div class="contact-bar">
+                    <a href="mailto:mt68291@umbc.edu" class="contact-link"><i class="fa-solid fa-envelope"></i> mt68291@umbc.edu</a>
+                    <a href="https://linkedin.com/in/krishna-cm" target="_blank" class="contact-link"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/krishna-cm</a>
+                    <a href="https://github.com/Kchaitanya30" target="_blank" class="contact-link"><i class="fa-brands fa-github"></i> Kchaitanya30</a>
+                    <span class="contact-link static"><i class="fa-solid fa-location-dot"></i> Baltimore, MD</span>
                 </div>
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section id="education" class="section hidden">
-            <h2 class="section-title">Education</h2>
-            <div class="cards-container">
-                <div class="glass-card">
-                    <h3>M.S. Geographic Information Systems</h3>
-                    <p class="subtitle">University of Maryland Baltimore County</p>
-                    <p>Focusing on Earth Observation, Remote Sensing, Land Use / Land Cover, and GeoAI Environmental Applications.</p>
+        <!-- About Section -->
+        <section id="about" class="section hidden">
+            <div class="content-wrapper">
+                <h2 class="section-title">About Me</h2>
+                <div class="text-card">
+                    <p>I am a graduate student in Geographic Information Systems (GIS) at the University of Maryland Baltimore County, with a research focus on Earth observation, remote sensing, and geospatial analysis. My work centers on using satellite imagery, spatial data, and reproducible workflows to study environmental and socio-environmental processes.</p>
+                    <p>I am particularly interested in applying computational methods, Geospatial AI, and programming automation to analyze large geospatial datasets and support research in environmental monitoring and urban planning.</p>
                 </div>
             </div>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="section hidden">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-pill">R</div>
-                <div class="skill-pill">Python</div>
-                <div class="skill-pill">ArcGIS Pro</div>
-                <div class="skill-pill">QGIS</div>
-                <div class="skill-pill">PostgreSQL / PostGIS</div>
-                <div class="skill-pill">raster / sf / terra</div>
-                <div class="skill-pill">tidyverse</div>
-                <div class="skill-pill">Satellite Data (netCDF/HDF)</div>
-                <div class="skill-pill">HTML/CSS</div>
+        <section id="skills" class="section hidden bg-light">
+            <div class="content-wrapper">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-container">
+                    
+                    <div class="skill-category">
+                        <h3>Programming & Data Analysis</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">Python (Arcpy, Pandas)</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">MATLAB</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML / CSS</span>
+                            <span class="skill-tag">C / C++</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>GIS & Remote Sensing Tools</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">ArcGIS Pro & Online</span>
+                            <span class="skill-tag">QGIS</span>
+                            <span class="skill-tag">Google Earth Engine</span>
+                            <span class="skill-tag">ENVI</span>
+                            <span class="skill-tag">Pix4DMapper</span>
+                            <span class="skill-tag">GEDI</span>
+                            <span class="skill-tag">Hyperspectral Data</span>
+                            <span class="skill-tag">ESRI Field Maps</span>
+                            <span class="skill-tag">Leaflet</span>
+                            <span class="skill-tag">AutoCAD</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Database & Management</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">PostgreSQL / PostGIS</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Jupyter Notebooks</span>
+                            <span class="skill-tag">NVivo</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section hidden">
+            <div class="content-wrapper">
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="timeline">
+                    <!-- Recent Experience -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content card">
+                            <div class="timeline-header">
+                                <h3>GIS Fellow & Intern (AGU's Thriving Earth Exchange)</h3>
+                                <span class="date-badge">June 2025 – Present</span>
+                            </div>
+                            <h4 class="company">Baltimore Green Justice Workers Cooperative • Baltimore, MD</h4>
+                            <ul>
+                                <li>Coordinate GIS analysis and mapping for 12 Baltimore-based climate organizations focused on climate and environmental programs.</li>
+                                <li>Create StoryMaps, infographics, and data visualizations, and deliver GIS workshops to build community capacity.</li>
+                                <li>Perform geospatial and remote sensing analysis to produce datasets and visualizations supporting grant proposals and stakeholder engagement.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content card">
+                            <div class="timeline-header">
+                                <h3>Graduate Research Assistant – Geospatial AI & LLM</h3>
+                                <span class="date-badge">Sept 2025 – Present</span>
+                            </div>
+                            <h4 class="company">University of Maryland Baltimore County • Baltimore, USA</h4>
+                            <ul>
+                                <li>Developing a workshop on Geospatial Analysis with Generative AI, integrating LLM-based tools with R, Quarto, and GIS workflows.</li>
+                                <li>Organizing workshops on text and image analysis using Generative AI for qualitative social science research.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content card">
+                            <div class="timeline-header">
+                                <h3>Graduate Research Assistant – Housing & Policing</h3>
+                                <span class="date-badge">Nov 2024 – Present</span>
+                            </div>
+                            <h4 class="company">University of Maryland Baltimore County • Baltimore, USA</h4>
+                            <ul>
+                                <li>Conducting GIS-based research using ESRI ArcGIS and NVivo to generate spatial insights and thematic analysis on urban housing interfaces.</li>
+                                <li>Contributing to a research paper on the intersection of urban housing and policing.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content card">
+                            <div class="timeline-header">
+                                <h3>GIS Mapping & Data Intern</h3>
+                                <span class="date-badge">Feb 2025 – May 2025</span>
+                            </div>
+                            <h4 class="company">American Dog Society • New York, NY</h4>
+                            <ul>
+                                <li>Extracted, cleaned, and analyzed geospatial data on pet facilities using Python to construct neighborhood-level metrics.</li>
+                                <li>Developed interactive web maps via JavaScript, HTML, and ArcGIS Online.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Toggle Button for Older Experience -->
+                    <button id="toggle-experience" class="btn-outline">Show Previous Experience <i class="fa-solid fa-chevron-down"></i></button>
+
+                    <!-- Older Experience (Hidden Initially) -->
+                    <div id="older-experience" class="hidden-experience">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content card">
+                                <div class="timeline-header">
+                                    <h3>GIS Senior Process Executive</h3>
+                                    <span class="date-badge">Apr 2022 – Aug 2024</span>
+                                </div>
+                                <h4 class="company">Infosys • Hyderabad, India</h4>
+                                <ul>
+                                    <li>Developed Python-based automation tools with documented workflows, reducing manual GIS processing by 40%.</li>
+                                    <li>Led QA/QC analysis on Apple Maps’ POI data, improving navigation accuracy. (Awarded I-Star Incentive 2023)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content card">
+                                <div class="timeline-header">
+                                    <h3>GIS Intern</h3>
+                                    <span class="date-badge">Jun 2021 – Aug 2021</span>
+                                </div>
+                                <h4 class="company">Dronah • Jaipur, India</h4>
+                                <ul>
+                                    <li>Automated GIS map generation for the Jaipur World Heritage City Tourism Plan using Python.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content card">
+                                <div class="timeline-header">
+                                    <h3>Planning Intern</h3>
+                                    <span class="date-badge">Feb 2021 – May 2021</span>
+                                </div>
+                                <h4 class="company">All India Institute of Local Self Governance • Hyderabad, India</h4>
+                                <ul>
+                                    <li>Prepared Detailed Project Reports focusing on Sustainability and Waste Management for Gram Panchayats.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content card">
+                                <div class="timeline-header">
+                                    <h3>GIS Data Analyst</h3>
+                                    <span class="date-badge">Aug 2020 – Feb 2021</span>
+                                </div>
+                                <h4 class="company">Pure Earth Foundation • Hyderabad, India</h4>
+                                <ul>
+                                    <li>Conducted on-site GPS surveys for forest land claims and mapped specific claimant polygons via ArcGIS/QGIS and LiDAR processing.</li>
+                                    <li>Led a team of 20 surveyors in GPS data collection, improving field accuracy by 25%.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="section hidden">
-            <h2 class="section-title">Selected Projects</h2>
-            <div class="timeline">
-                <div class="timeline-item glass-card">
-                    <h3>Green Space Accessibility Baltimore</h3>
-                    <p class="subtitle">Spatial Analysis Project</p>
-                    <p>Analyzing accessibility to green spaces across Baltimore using public and crowdsourced open data.</p>
-                </div>
-                <div class="timeline-item glass-card">
-                    <h3>PACE Satellite Imagery Analysis</h3>
-                    <p class="subtitle">Remote Sensing</p>
-                    <p>Processed and analyzed PACE satellite imagery using Python and Jupyter Notebooks for Earth observation research.</p>
-                </div>
-                <div class="timeline-item glass-card">
-                    <h3>Montgomery Transit Accessibility</h3>
-                    <p class="subtitle">PostgreSQL / PLpgSQL</p>
-                    <p>Evaluated transit accessibility to new residential areas in Montgomery County using relational spatial databases.</p>
-                </div>
-                <div class="timeline-item glass-card">
-                    <h3>Baltimore Vacant Properties Analysis</h3>
-                    <p class="subtitle">Reproducible Geospatial Workflows</p>
-                    <p>Utilized spatial data analysis techniques to model and visualize vacant property trends in Baltimore.</p>
+        <section id="projects" class="section hidden bg-light">
+            <div class="content-wrapper">
+                <h2 class="section-title">Selected Projects</h2>
+                <div class="projects-grid">
+                    
+                    <div class="project-card card hover-lift">
+                        <div class="project-header">
+                            <h3>Transit Accessibility of New Residential Development</h3>
+                            <a href="https://github.com/Kchaitanya30/Montgomery-Transit-Accessibility-to-New-Residential-Areas" target="_blank" class="github-link" title="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <p class="project-tech">R • Quarto • PostgreSQL/PostGIS • Montgomery County</p>
+                        <ul class="project-details">
+                            <li>Built reproducible ETL pipelines integrating parcel, boundary, and transit datasets into a PostGIS database.</li>
+                            <li>Designed a normalized schema with spatial SQL queries to evaluate transit accessibility for 6,300+ new parcels.</li>
+                            <li>Produced tract-level analyses to support equity-focused regional planning.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card card hover-lift">
+                        <div class="project-header">
+                            <h3>Green Space Accessibility and Demographics Analysis</h3>
+                            <a href="https://github.com/Kchaitanya30/Green-Space-Accessibility-Baltimore" target="_blank" class="github-link" title="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <p class="project-tech">R • OpenRouteService • ggplot2 • Leaflet • Baltimore</p>
+                        <ul class="project-details">
+                            <li>Conducted isochrone analysis using APIs for geospatial evaluation of park accessibility.</li>
+                            <li>Analyzed walkability and demographics to identify park access disparities.</li>
+                            <li>Created interactive Leaflet maps integrating ArcGIS to visualize underserved areas.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card card hover-lift">
+                        <div class="project-header">
+                            <h3>PACE Satellite Imagery Analysis</h3>
+                            <a href="https://github.com/Kchaitanya30/PACE-Satellite-Imagery-Analysis" target="_blank" class="github-link" title="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <p class="project-tech">Python • Jupyter Notebooks • Satellite Data</p>
+                        <ul class="project-details">
+                            <li>Processed and analyzed PACE satellite datasets using Python data science ecosystems to support Earth Observation objectives.</li>
+                            <li>Generated exploratory spatial analysis frameworks for large scale remote sensing imagery.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Education & Credentials Section -->
+        <section id="education" class="section hidden">
+            <div class="content-wrapper">
+                <h2 class="section-title">Education & Credentials</h2>
+                
+                <div class="edu-grid">
+                    <!-- Academics -->
+                    <div class="edu-column">
+                        <h3><i class="fa-solid fa-graduation-cap highlight-icon"></i> Academic Degrees</h3>
+                        
+                        <div class="card edu-card">
+                            <div class="edu-header">
+                                <h4>Masters in Geographical Information Systems (GIS)</h4>
+                                <span class="date-badge">May 2026</span>
+                            </div>
+                            <p class="institution">University of Maryland Baltimore County • GPA 3.82</p>
+                            <p class="details"><strong>Focus:</strong> Spatial Dataset Dev, Remote Sensing Apps, Satellite Image Analysis, Critical & Ethical Mapping.</p>
+                        </div>
+
+                        <div class="card edu-card">
+                            <div class="edu-header">
+                                <h4>Bachelor of Technology in Urban & Regional Planning</h4>
+                                <span class="date-badge">May 2020</span>
+                            </div>
+                            <p class="institution">Jawaharlal Nehru Architecture and Fine Arts University • India</p>
+                            <p class="details"><strong>Focus:</strong> Remote Sensing, AutoCAD, Spatial Data Analysis, Surveying, Photogrammetry.</p>
+                        </div>
+                    </div>
+
+                    <!-- Leadership, Conferences, Certs -->
+                    <div class="edu-column">
+                        <h3><i class="fa-solid fa-certificate highlight-icon"></i> Professional Footprint</h3>
+                        
+                        <div class="card spec-card">
+                            <h4>Conferences</h4>
+                            <ul class="clean-list">
+                                <li><strong>Esri FedGIS</strong> (Feb 2026)</li>
+                                <li><strong>FISH Pace Hackweek</strong> (Jan 2026)</li>
+                                <li><strong>TUGIS</strong> (Aug 2025)</li>
+                            </ul>
+                        </div>
+
+                        <div class="card spec-card">
+                            <h4>Certifications</h4>
+                            <ul class="clean-list">
+                                <li><strong>NASA ARSET</strong>: Hyperspectral Data for Land Cover Applications</li>
+                                <li><strong>C.E.D.</strong>: Advanced Certificate in Geoinformatics</li>
+                                <li><strong>QGIS Training</strong>: Central University of Karnataka</li>
+                            </ul>
+                        </div>
+
+                        <div class="card spec-card">
+                            <h4>Leadership & Affiliations</h4>
+                            <ul class="clean-list">
+                                <li><strong>Vice President</strong> - ASPRS (UMBC Student Chapter)</li>
+                                <li><strong>Student Member</strong> - Maryland Society of Surveyors & American Planning Association</li>
+                            </ul>
+                        </div>
+
+                        <!-- Recognition Spotlight -->
+                        <div class="card highlight-card">
+                            <p><i class="fa-solid fa-award"></i> <strong>MTIP Grant Recipient:</strong> Supporting GIS fellowship at BGJWC.<br>
+                            <i class="fa-solid fa-trophy"></i> <strong>I-Star Incentive Award (2023):</strong> Outstanding contributions at Infosys.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Krishna C. Mummadi. Built with precision for geospatial excellence.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
