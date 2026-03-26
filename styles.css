@@ -132,6 +132,12 @@ p {
 }
 
 /* Topographic/Grid Background (Subtle) */
+@keyframes slowPan {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 .topo-bg {
     position: absolute;
     top: 0;
@@ -139,10 +145,11 @@ p {
     width: 100%;
     height: 100vh;
     background-image: url('assets/eo_bg.png');
-    background-size: cover;
+    background-size: 150%;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.08; /* subtle rendering for highly saturated satellite images */
+    animation: slowPan 120s ease-in-out infinite;
     z-index: -1;
     pointer-events: none;
 }
