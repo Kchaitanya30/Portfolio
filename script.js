@@ -59,3 +59,27 @@ window.addEventListener('scroll', () => {
         navbar.style.boxShadow = 'none';
     }
 });
+
+// =============================================
+// Methodology Modal
+// =============================================
+function openMethodologyModal() {
+    const modal = document.getElementById('methodology-modal');
+    modal.classList.add('modal-open');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeMethodologyModal(event, force = false) {
+    if (force || (event && event.target === event.currentTarget)) {
+        const modal = document.getElementById('methodology-modal');
+        modal.classList.remove('modal-open');
+        document.body.style.overflow = '';
+    }
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeMethodologyModal(null, true);
+    }
+});

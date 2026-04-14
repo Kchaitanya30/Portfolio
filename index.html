@@ -19,6 +19,7 @@
             <a href="#hero" class="logo">Krishna</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
@@ -243,47 +244,92 @@
         <!-- Projects Section -->
         <section id="projects" class="section hidden bg-light">
             <div class="content-wrapper">
-                <h2 class="section-title">Selected Projects</h2>
+                <h2 class="section-title">Projects</h2>
+
                 <div class="projects-grid">
-                    
+
+                    <!-- CVI: first card -->
                     <div class="project-card card hover-lift">
-                        <div class="project-header">
-                            <h3>Transit Accessibility of New Residential Development</h3>
-                            <a href="https://github.com/Kchaitanya30/Montgomery-Transit-Accessibility-to-New-Residential-Areas" target="_blank" class="github-link" title="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                        <div class="project-thumb">
+                            <img src="assets/project_cvi.png" alt="Baltimore CVI satellite thermal imagery" loading="lazy">
+                            <div class="thumb-overlay">
+                                <a href="https://kchaitanya30.github.io/Baltimore-Climate-Vulnerability-Index/" target="_blank" class="thumb-btn"><i class="fa-solid fa-map-location-dot"></i> Live Map</a>
+                                <a href="https://arcg.is/1jf0Se1" target="_blank" class="thumb-btn thumb-btn--green"><i class="fa-solid fa-book-open"></i> StoryMap</a>
+                            </div>
                         </div>
-                        <p class="project-tech">R • Quarto • PostgreSQL/PostGIS • Montgomery County</p>
-                        <ul class="project-details">
-                            <li>Built reproducible ETL pipelines integrating parcel, boundary, and transit datasets into a PostGIS database.</li>
-                            <li>Designed a normalized schema with spatial SQL queries to evaluate transit accessibility for 6,300+ new parcels.</li>
-                            <li>Produced tract-level analyses to support equity-focused regional planning.</li>
-                        </ul>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Baltimore Climate Vulnerability Index</h3>
+                            </div>
+                            <p class="project-tech">ArcGIS Online &bull; Leaflet.js &bull; JavaScript &bull; FEMA NFHL &bull; NLCD &bull; HTML/CSS</p>
+                            <ul class="project-details">
+                                <li>Built a weighted composite index scoring every Baltimore census tract 0&ndash;100 across four indicators: Heat Severity (30%), Flood Exposure (25%), Canopy Deficit (25%), and Socio-Economic Sensitivity (20%).</li>
+                                <li>Processed raster and vector data in ArcGIS Online using Zonal Statistics, Overlay, Summarize Within, and Min-Max Normalization across all inputs.</li>
+                                <li>Developed for a GeoAI workshop &mdash; includes an interactive Leaflet map and an ArcGIS StoryMap presenting the full methodology and findings.</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="project-card card hover-lift">
-                        <div class="project-header">
-                            <h3>Green Space Accessibility and Demographics Analysis</h3>
-                            <a href="https://github.com/Kchaitanya30/Green-Space-Accessibility-Baltimore" target="_blank" class="github-link" title="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                        <div class="project-thumb">
+                            <img src="assets/project_transit.png" alt="Transit accessibility satellite aerial" loading="lazy">
+                            <div class="thumb-overlay">
+                                <a href="https://github.com/Kchaitanya30/Montgomery-Transit-Accessibility-to-New-Residential-Areas" target="_blank" class="thumb-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </div>
                         </div>
-                        <p class="project-tech">R • OpenRouteService • ggplot2 • Leaflet • Baltimore</p>
-                        <ul class="project-details">
-                            <li>Conducted isochrone analysis using APIs for geospatial evaluation of park accessibility.</li>
-                            <li>Analyzed walkability and demographics to identify park access disparities.</li>
-                            <li>Created interactive Leaflet maps integrating ArcGIS to visualize underserved areas.</li>
-                        </ul>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Transit Accessibility of New Residential Development</h3>
+                            </div>
+                            <p class="project-tech">R &bull; Quarto &bull; PostgreSQL/PostGIS &bull; Montgomery County</p>
+                            <ul class="project-details">
+                                <li>Built reproducible ETL pipelines integrating parcel, boundary, and transit datasets into a PostGIS database.</li>
+                                <li>Designed a normalized schema with spatial SQL queries to evaluate transit accessibility for 6,300+ new parcels.</li>
+                                <li>Produced tract-level analyses to support equity-focused regional planning.</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="project-card card hover-lift">
-                        <div class="project-header">
-                            <h3>Gulf Hypoxia Zones Assessment</h3>
-                            <a href="https://github.com/fish-pace/2026-proj-hypoxia-zones" target="_blank" class="github-link" title="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                        <div class="project-thumb">
+                            <img src="assets/project_green.png" alt="NDVI green space accessibility satellite imagery" loading="lazy">
+                            <div class="thumb-overlay">
+                                <a href="https://github.com/Kchaitanya30/Green-Space-Accessibility-Baltimore" target="_blank" class="thumb-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </div>
                         </div>
-                        <p class="project-tech">Python • Jupyter Notebooks • PACE Satellite Data</p>
-                        <ul class="project-details">
-                            <li>Explored linkages between PACE ocean color and bottom-water hypoxia in the Gulf of Mexico (FISH-PACE Hackweek 2026).</li>
-                            <li>Collated and analyzed in-situ dissolved oxygen (DO) datasets with PACE satellite imagery to understand biogeochemical relationships.</li>
-                        </ul>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Green Space Accessibility and Demographics Analysis</h3>
+                            </div>
+                            <p class="project-tech">R &bull; OpenRouteService &bull; ggplot2 &bull; Leaflet &bull; Baltimore</p>
+                            <ul class="project-details">
+                                <li>Conducted isochrone analysis using APIs for geospatial evaluation of park accessibility.</li>
+                                <li>Analyzed walkability and demographics to identify park access disparities.</li>
+                                <li>Created interactive Leaflet maps integrating ArcGIS to visualize underserved areas.</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
+
+                    <div class="project-card card hover-lift">
+                        <div class="project-thumb">
+                            <img src="assets/project_hypoxia.png" alt="NASA PACE ocean color hypoxia satellite data" loading="lazy">
+                            <div class="thumb-overlay">
+                                <a href="https://github.com/fish-pace/2026-proj-hypoxia-zones" target="_blank" class="thumb-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Gulf Hypoxia Zones Assessment</h3>
+                            </div>
+                            <p class="project-tech">Python &bull; Jupyter Notebooks &bull; PACE Satellite Data</p>
+                            <ul class="project-details">
+                                <li>Explored linkages between PACE ocean color and bottom-water hypoxia in the Gulf of Mexico (FISH-PACE Hackweek 2026).</li>
+                                <li>Collated and analyzed in-situ dissolved oxygen (DO) datasets with PACE satellite imagery to understand biogeochemical relationships.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div><!-- end projects-grid -->
             </div>
         </section>
 
@@ -321,6 +367,7 @@
                                 <li><strong>NASA ARSET</strong>: Hyperspectral Data for Land Cover Applications</li>
                                 <li><strong>C.E.D.</strong>: Advanced Certificate in Geoinformatics</li>
                                 <li><strong>QGIS Training</strong>: Central University of Karnataka</li>
+                                <li><strong>Brandefense Academy</strong>: OSINT &mdash; Visual Intelligence (VISINT) &amp; Geospatial Intelligence (GEOINT) <span class="cert-date">Apr 2026</span></li>
                             </ul>
                         </div>
                     </div>
@@ -330,11 +377,18 @@
                         <h3><i class="fa-solid fa-certificate highlight-icon"></i> Professional Footprint & Leadership</h3>
                         
                         <div class="card spec-card">
-                            <h4>Conferences</h4>
+                            <h4>Conferences &amp; Workshops</h4>
                             <ul class="clean-list">
                                 <li><strong>Esri FedGIS</strong> (Feb 2026)</li>
                                 <li><strong>FISH Pace Hackweek</strong> (Jan 2026)</li>
                                 <li><strong>TUGIS</strong> (Aug 2025)</li>
+                                <li>
+                                    <strong>Workshop Presenter</strong> &mdash; Geospatial Analysis &amp; GeoAI Integration (Apr 2026)
+                                    <span class="workshop-links">
+                                        <a href="https://arcg.is/1jf0Se1" target="_blank" title="View StoryMap"><i class="fa-solid fa-book-open"></i> StoryMap</a>
+                                        <a href="https://kchaitanya30.github.io/Baltimore-Climate-Vulnerability-Index/" target="_blank" title="View Interactive Map"><i class="fa-solid fa-map-location-dot"></i> Map</a>
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                         <div class="card spec-card">
@@ -361,6 +415,139 @@
     <footer class="footer">
         <p>&copy; 2026 Krishna C. Mummadi. Built with precision for geospatial excellence.</p>
     </footer>
+
+    <!-- Methodology Modal -->
+    <div id="methodology-modal" class="modal-overlay" onclick="closeMethodologyModal(event)">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div>
+                    <h2>Baltimore CVI &mdash; Full Methodology</h2>
+                    <p class="modal-subtitle">7-Phase geospatial analysis workflow using ArcGIS Online, FEMA NFHL, NLCD &amp; Census data</p>
+                </div>
+                <button class="modal-close" onclick="closeMethodologyModal(null, true)" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+
+                <!-- Phase 1 -->
+                <div class="method-phase">
+                    <div class="phase-header">
+                        <span class="phase-num">Phase 1</span>
+                        <h3>Data Collection</h3>
+                    </div>
+                    <ul class="method-list">
+                        <li><strong>Administrative Boundaries:</strong> 2020 Census Tracts &mdash; Baltimore Metro Regional GIS Data Center</li>
+                        <li><strong>Thermal Analysis:</strong> Heat Severity USA 2025 (ArcGIS Image Service)</li>
+                        <li><strong>Flood Data:</strong> FEMA National Flood Hazard Layer 2024 (Flood Hazard Zones &amp; Boundaries)</li>
+                        <li><strong>Vegetation Cover:</strong> NLCD Tree Canopy 2011&ndash;2021 (MRLC / ArcGIS Landscape Service)</li>
+                        <li><strong>Demographics:</strong> BaltimoreCity_Demographics &amp; Poverty Status datasets</li>
+                    </ul>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="method-phase">
+                    <div class="phase-header">
+                        <span class="phase-num">Phase 2</span>
+                        <h3>Heat Severity Processing (Raster → Vector)</h3>
+                    </div>
+                    <ul class="method-list">
+                        <li><strong>Tool: Zonal Statistics to Table</strong> &mdash; Computes mean heat score per census tract from the raster.</li>
+                        <li><strong>Tool: Join</strong> &mdash; Joins the mean heat score table back to Census Tracts using Tract ID &rarr; TRACTICE10.</li>
+                        <li><strong>Output:</strong> <code>Baltimore_tracts_heatseverity2</code> with average surface temperature per tract.</li>
+                    </ul>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="method-phase">
+                    <div class="phase-header">
+                        <span class="phase-num">Phase 3</span>
+                        <h3>Flood Exposure Analysis</h3>
+                    </div>
+                    <ul class="method-list">
+                        <li><strong>Tool: Overlay (Intersect)</strong> &mdash; Clips FEMA flood zones to census tract boundaries to create "flood pieces."</li>
+                        <li><strong>Tool: Filter</strong> &mdash; Retains only high-risk zones (FLD_ZONE: AE, A, VE, AO &mdash; &ge;1% annual flood chance).</li>
+                        <li><strong>Tool: Summarize Within</strong> &mdash; Aggregates flood area (sq miles) per tract &amp; calculates coverage percentage.</li>
+                        <li><strong>Formula:</strong> <code>Flood_Percent = (Flood_Area_SqMi / Tract_SqMi) &times; 100</code></li>
+                        <li><strong>Output:</strong> <code>Balt_tract_MHeat_flood</code> &mdash; 0 = no flood risk; 100 = entire tract in floodplain.</li>
+                    </ul>
+                </div>
+
+                <!-- Phase 4 -->
+                <div class="method-phase">
+                    <div class="phase-header">
+                        <span class="phase-num">Phase 4</span>
+                        <h3>Tree Canopy Deficit</h3>
+                    </div>
+                    <ul class="method-list">
+                        <li><strong>Tool: Zonal Statistics as Table</strong> &mdash; Mean NLCD tree canopy % per census tract &rarr; <code>Balt_tree_canopy</code>.</li>
+                        <li><strong>Formula:</strong> <code>Canopy_Deficit_Percent = 100 &minus; MEAN_canopy</code> (higher = less trees = worse).</li>
+                        <li><strong>Tool: Join Features</strong> &mdash; Joins canopy deficit to the heat + flood layer using Tract ID &rarr; CT10.</li>
+                        <li><strong>Output:</strong> <code>Balt_Tract_Heat_Flood_Treecanopy</code></li>
+                    </ul>
+                </div>
+
+                <!-- Phase 5 -->
+                <div class="method-phase">
+                    <div class="phase-header">
+                        <span class="phase-num">Phase 5</span>
+                        <h3>Socio-Economic Sensitivity</h3>
+                    </div>
+                    <ul class="method-list">
+                        <li><strong>Tool: Join Features</strong> &mdash; Joins BaltimoreCity_Demographics to master layer using Full Census Tract ID &rarr; GEOID.</li>
+                        <li><strong>Social Vulnerability Formula (Arcade):</strong><br><code>((100 &minus; PNHT) + Percent_BelowPovertyLevel_All_p) / 2</code></li>
+                        <li>Combines minority population index &amp; poverty rate into a single 0&ndash;100 composite score.</li>
+                        <li><strong>Output:</strong> <code>Balt_Tract_Heat_Flood_Treecanopy_final2</code></li>
+                    </ul>
+                </div>
+
+                <!-- Phase 6 -->
+                <div class="method-phase">
+                    <div class="phase-header">
+                        <span class="phase-num">Phase 6</span>
+                        <h3>Min-Max Normalization (0&ndash;100 Scale)</h3>
+                    </div>
+                    <div class="norm-table-wrapper">
+                        <table class="norm-table">
+                            <thead><tr><th>Variable</th><th>Min</th><th>Max</th><th>Normalization Formula</th></tr></thead>
+                            <tbody>
+                                <tr><td>Mean Heat</td><td>1.09</td><td>4.02</td><td><code>(x &minus; 1.09) / (4.02 &minus; 1.09) &times; 100</code></td></tr>
+                                <tr><td>Flood Percent</td><td>0</td><td>25.88</td><td><code>(x &minus; 0) / (25.88 &minus; 0) &times; 100</code></td></tr>
+                                <tr><td>Canopy Deficit</td><td>32.84</td><td>100</td><td><code>(x &minus; 32.84) / (100 &minus; 32.84) &times; 100</code></td></tr>
+                                <tr><td>Social Vulnerability</td><td>49.65</td><td>78.80</td><td><code>(x &minus; 49.65) / (78.80 &minus; 49.65) &times; 100</code></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Phase 7 -->
+                <div class="method-phase">
+                    <div class="phase-header">
+                        <span class="phase-num phase-num--final">Phase 7</span>
+                        <h3>Final Index Calculation</h3>
+                    </div>
+                    <div class="final-formula-block">
+                        <p class="final-formula-label">Weighted Composite Score (Arcade Expression)</p>
+                        <code class="final-formula-code">
+                            (Heat_Norm &times; 0.30) + (Flood_Norm &times; 0.25) + (Canopy_Norm &times; 0.25) + (Social_Norm &times; 0.20)
+                        </code>
+                    </div>
+                    <ul class="method-list" style="margin-top:1rem">
+                        <li><strong>Score 0:</strong> Safest tract &mdash; coolest, no flooding, maximum tree cover, high economic resource.</li>
+                        <li><strong>Score 100:</strong> Most vulnerable &mdash; hottest, flood-prone, bare canopy, low economic capacity.</li>
+                        <li><strong>Observed Range:</strong> 11.34 &ndash; 80.66 across all Baltimore census tracts.</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <a href="https://kchaitanya30.github.io/Baltimore-Climate-Vulnerability-Index/" target="_blank" class="modal-action-btn">
+                    <i class="fa-solid fa-map-location-dot"></i> Open Interactive Map
+                </a>
+                <a href="https://arcg.is/1jf0Se1" target="_blank" class="modal-action-btn modal-action-btn--secondary">
+                    <i class="fa-solid fa-book-open"></i> View StoryMap
+                </a>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
